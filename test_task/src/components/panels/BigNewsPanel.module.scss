@@ -1,0 +1,47 @@
+.Panel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 234px;
+  box-shadow: 0 3px 7px #dbdbdb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.PanelLeft {
+  width: 60%;
+  padding: 25px;
+}
+
+.PanelTitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.PanelDescription {
+  opacity: 0.7;
+  overflow: hidden;
+  max-height: 90px;
+  margin-top: 8px;
+}
+
+.PanelBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.PanelReadMore {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.PanelRight {
+  width: 40%;
+  height: 234px;
+  overflow: hidden;
+}

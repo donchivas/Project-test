@@ -1,0 +1,9 @@
+@import "../../variables";
+
+.Container {
+  width: 100%;
+  margin: 10px auto;
+  @media all and (min-width: $mobile-threshold) {
+    width: $desktop-container-size;
+  }
+}

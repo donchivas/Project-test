@@ -1,0 +1,109 @@
+@import "../../variables";
+
+.Header {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-top: 4px;
+  color: black;
+  text-decoration: none;
+
+  &:hover, &:visited {
+    color: black;
+  }
+}
+
+.Left {
+  display: flex;
+  flex-direction: row;
+}
+
+.Icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.Right {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.CategoryItem {
+  cursor: pointer;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+
+  &:hover {
+    color: $accent-blue;
+  }
+}
+
+.CategoryItemHoverable {
+  position: relative;
+  @extend .CategoryItem;
+
+  &:hover {
+    .Dropdown {
+      display: flex;
+    }
+  }
+}
+
+.Dropdown {
+  position: absolute;
+  display: none;
+  top: 30px;
+  margin-left: -80px;
+
+  flex-direction: row;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 0 6px lightgray;
+
+  &:before {
+    content: "";
+    top: -10px;
+    left: calc(50% - 10px);
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+  }
+}
+
+.DropdownColumn {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  padding-left: 20px;
+}
+
+.DropdownItem {
+  color: black;
+
+  &:hover {
+    color: $accent-blue;
+  }
+}
+
+.Categories {
+  display: flex;
+  flex-direction: row;
+  margin-right: 200px;
+  font-weight: 600;
+  width: 350px;
+  align-items: center;
+  justify-content: space-between;
+}

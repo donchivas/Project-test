@@ -1,0 +1,46 @@
+.DetailedNews {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.DetailedNewsImageWrapper {
+  width: 100%;
+  height: 350px;
+}
+
+.Image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.TextWrapper {
+  padding: 15px 100px;
+}
+
+.TopText {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.AuthorWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.WrittenBy {
+  font-weight: 600;
+}
+
+.Date {
+  margin-left: 30px;
+  opacity: 0.7;
+}
+
+.lipsumTitle {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px 0;
+}
